@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSTX Computer Science Department</title>
+    <title>SSTX High School Computer Science Department</title>
     <style>
         /* Basic Reset */
         * {
@@ -22,16 +22,17 @@
         }
         
         header {
-            background-color: #0c2340;
+            background-color: #8B0000; /* Dark Red */
             color: white;
             padding: 1rem;
             margin-bottom: 2rem;
         }
         
         nav {
-            background-color: #f4f4f4;
+            background-color: #f8f0f0; /* Light red-tinted background */
             padding: 1rem;
             margin-bottom: 2rem;
+            border-bottom: 3px solid #8B0000;
         }
         
         nav ul {
@@ -46,11 +47,13 @@
         
         nav ul li a {
             text-decoration: none;
-            color: #0c2340;
+            color: #8B0000;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
         
         nav ul li a:hover {
+            color: #FF0000;
             text-decoration: underline;
         }
         
@@ -62,9 +65,10 @@
         }
         
         .sidebar {
-            background-color: #f4f4f4;
+            background-color: #f8f0f0;
             padding: 1rem;
             border-radius: 5px;
+            border-left: 4px solid #8B0000;
         }
         
         .featured-courses {
@@ -82,16 +86,40 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 1rem;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 3px solid #C41E3A; /* Crimson accent */
         }
         
         .course-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(139,0,0,0.2);
+        }
+        
+        .course-card h3 {
+            color: #8B0000;
+        }
+        
+        .course-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #8B0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .course-card a:hover {
+            text-decoration: underline;
+        }
+        
+        h2 {
+            color: #8B0000;
+            border-bottom: 2px solid #f8f0f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         
         footer {
-            background-color: #0c2340;
+            background-color: #8B0000;
             color: white;
             text-align: center;
             padding: 1rem;
@@ -115,8 +143,8 @@
 </head>
 <body>
     <header>
-        <h1>SSTX Computer Science Department</h1>
-        <p>Preparing students for technological innovation and leadership</p>
+        <h1>SSTX High School Computer Science Department</h1>
+        <p>Preparing students for success in the digital world</p>
     </header>
     
     <nav>
@@ -124,10 +152,10 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="faculty.html">Faculty</a></li>
-            <li><a href="programs.html">Programs</a></li>
             <li><a href="courses.html">Courses</a></li>
-            <li><a href="research.html">Research</a></li>
             <li><a href="resources.html">Student Resources</a></li>
+            <li><a href="projects.html">Student Projects</a></li>
+            <li><a href="clubs.html">Clubs & Activities</a></li>
             <li><a href="news.html">News & Events</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -137,32 +165,32 @@
         <main>
             <section>
                 <h2>Welcome to the Computer Science Department</h2>
-                <p>The Computer Science Department at SSTX is dedicated to providing cutting-edge education and research opportunities in computing. Our program emphasizes both theoretical foundations and practical applications, preparing students for successful careers in technology.</p>
-                <p>With a diverse faculty of industry professionals and academic researchers, we offer comprehensive programs from introductory computing to specialized graduate-level courses in artificial intelligence, data science, cybersecurity, and more.</p>
+                <p>The Computer Science Department at SSTX High School is dedicated to providing students with the skills and knowledge needed to thrive in our increasingly digital world. Our curriculum emphasizes both theoretical foundations and practical applications, preparing students for college and future careers in technology.</p>
+                <p>Whether you're just beginning your coding journey or already have experience in programming, our department offers courses to meet your needs and challenge your abilities.</p>
             </section>
             
             <section class="featured-courses">
-                <h2>Featured Courses</h2>
+                <h2>Our Courses</h2>
                 <div class="course-grid">
                     <div class="course-card">
-                        <h3>CS 101: Introduction to Programming</h3>
-                        <p>A foundational course in computer programming using Python.</p>
-                        <a href="courses/cs101.html">Learn More</a>
+                        <h3>Foundations of Programming in Python</h3>
+                        <p>An introductory course teaching programming fundamentals using Python.</p>
+                        <a href="courses/python-foundations.html">Learn More</a>
                     </div>
                     <div class="course-card">
-                        <h3>CS 250: Data Structures</h3>
-                        <p>Advanced programming concepts and fundamental data structures.</p>
-                        <a href="courses/cs250.html">Learn More</a>
+                        <h3>Web Development</h3>
+                        <p>Learn to create responsive websites using HTML, CSS, and JavaScript.</p>
+                        <a href="courses/web-development.html">Learn More</a>
                     </div>
                     <div class="course-card">
-                        <h3>CS 375: Web Development</h3>
-                        <p>Client and server-side web programming and applications.</p>
-                        <a href="courses/cs375.html">Learn More</a>
+                        <h3>Machine Learning and AI</h3>
+                        <p>Explore artificial intelligence concepts and create machine learning models.</p>
+                        <a href="courses/ml-ai.html">Learn More</a>
                     </div>
                     <div class="course-card">
-                        <h3>CS 480: Artificial Intelligence</h3>
-                        <p>Fundamentals of AI including neural networks and machine learning.</p>
-                        <a href="courses/cs480.html">Learn More</a>
+                        <h3>Independent Studies in Computer Science</h3>
+                        <p>Develop your own advanced project with faculty mentorship.</p>
+                        <a href="courses/independent-studies.html">Learn More</a>
                     </div>
                 </div>
             </section>
@@ -173,16 +201,16 @@
                 <h2>Announcements</h2>
                 <ul>
                     <li>
-                        <h3>Spring Registration Open</h3>
-                        <p>Course registration for the Spring semester is now open. Meet with your advisor to plan your schedule.</p>
+                        <h3>Course Registration</h3>
+                        <p>Registration for next semester's computer science courses is now open. Speak with your guidance counselor to sign up.</p>
                     </li>
                     <li>
-                        <h3>Tech Talk Series</h3>
-                        <p>Join us every Friday for our Tech Talk series featuring industry professionals.</p>
+                        <h3>Coding Club Meeting</h3>
+                        <p>Join us on Thursdays after school in Room 203 for Coding Club. All skill levels welcome!</p>
                     </li>
                     <li>
-                        <h3>Hackathon Coming Soon</h3>
-                        <p>Annual department hackathon scheduled for October 15-17. Registration opens next week.</p>
+                        <h3>Upcoming Hackathon</h3>
+                        <p>The annual SSTX Hackathon will take place on April 15-16. Sign up forms available in the CS lab.</p>
                     </li>
                 </ul>
             </section>
@@ -190,19 +218,19 @@
             <section>
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#">Academic Calendar</a></li>
-                    <li><a href="#">Laboratory Hours</a></li>
-                    <li><a href="#">Tutoring Services</a></li>
-                    <li><a href="#">Internship Opportunities</a></li>
-                    <li><a href="#">Research Opportunities</a></li>
+                    <li><a href="#">Computer Lab Hours</a></li>
+                    <li><a href="#">Tutoring Schedule</a></li>
+                    <li><a href="#">Software Resources</a></li>
+                    <li><a href="#">Competition Opportunities</a></li>
+                    <li><a href="#">CS College Pathways</a></li>
                 </ul>
             </section>
         </aside>
     </div>
     
     <footer>
-        <p>&copy; 2025 SSTX Computer Science Department. All rights reserved.</p>
-        <p>Austin Tx| Email: cellis@sstx.org</p>
+        <p>&copy; 2025 SSTX High School Computer Science Department. All rights reserved.</p>
+        <p>123 Education Avenue, Hometown, ST 12345 | Phone: (123) 456-7890 | Email: cs@sstx.edu</p>
     </footer>
 </body>
 </html>
